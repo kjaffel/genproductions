@@ -1,0 +1,11 @@
+--- HToZATo2L2B_800p00_700p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/SubProcesses/setscales.f	2020-06-21 14:19:51.000000000 +0200
++++ HToZATo2L2B_800p00_700p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/SubProcesses/setscales.f	2021-04-20 18:53:33.126861520 +0200
+@@ -570,7 +570,7 @@
+ ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+          write(*,*) "User-defined scale not set"
+          stop 1
+-         temp_scale_id='User-defined dynamical scale' ! use a meaningful string
++         temp_scale_id='H_T/4 := sum_i mT(i)/4, i=final state' ! use a meaningful string
+          tmp = 0d0
+ ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+ cc      USER-DEFINED SCALE: END OF USER CODE                                     cc

@@ -1,0 +1,11 @@
+--- HToZATo2L2B_800p00_700p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/SubProcesses/fks_singular.f	2020-06-21 14:19:51.000000000 +0200
++++ HToZATo2L2B_800p00_700p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/SubProcesses/fks_singular.f	2021-04-20 19:46:39.251271813 +0200
+@@ -4645,7 +4645,7 @@
+       double precision tiny
+       parameter (tiny=1d-6)
+ c comment these lines to calculate cpower
+-      cpower = -1d0
++      cpower = cpowerinput
+       return
+ c comment these lines to calculate cpower
+ 
