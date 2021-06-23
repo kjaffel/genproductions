@@ -11,16 +11,18 @@ or a conda environment (which requires a few changes to the script), see the [in
 - For each process we have a dir template, whatever changes you need to make it has to be for these cards Only !
 ```bash
 # gg Fusion; LO Loop Induced 4F-scheme
-cd run2Template_cards/template_HToZATo2L2B_200_50_1_ggH_TuneCP5_13TeV_pythia8`
+cd run2Template_cards/template_HToZATo2L2B_X_X_X_ggH_TuneCP5_13TeV_pythia8
 # b-associated Production; NLO 4F-scheme
-cd run2Template_cards/template_HToZATo2L2B_200_50_1_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8`
+cd run2Template_cards/template_HToZATo2L2B_X_X_X_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8
 ```
+``X_X_X`` : MH_MA_tanbeta parameters
 ### How to Run:
 ```python
 # run a test
-./prepare_MG5_cards.py --process bbH --test --templates run2Template_cards
+./prepare_MG5_cards.py --process bbH --test --templates run2Template_cards --mode H
 ```
 - ``-p``/``process``: bbH or ggH
+- ``-m``/``--mode`` : H or A means ( H->ZA or A->ZH)
 - ``-q``/``--queue``: condor, condor_spool, slurm or 1nh 
 - ``-s``/``--flavourscheme``: Production scheme 4FS, 5FS or None
 - ``--customizecards``: default False, param_card.dat will be generated instead !
