@@ -44,6 +44,7 @@ OR pass different ``--lhapdfsets`` with ``--lhaid``
 - Now in the dir cards the `blabla_param_card.dat` doesn't include the decay BR neither the total width for h3 and Z.
 You have to overwrite this card for each mass point to avoid madspin launch the automatic computation of the widths ! 
 Why you need to do that ? Because of these 2 open issue when using madspin [here](https://answers.launchpad.net/mg5amcnlo/+question/696286) and [here](https://answers.launchpad.net/mg5amcnlo/+question/696148).
+- You still need `set_bottomYukawa_coupling_onshell.py` script [can be found here](https://github.com/kjaffel/ZAPrivateProduction/blob/master/set_bottomYukawa_coupling_onshell.py) to overwrite the `param_card.dat` this will set for you the bottom yukawa couplings and compare the decay widths and BR given by MadWidth to 2HDMCalculator. This script is intend to trust 2HDMC compuations in case of divergence of order 0.05 `abs(recalculated_width_fromMadWidth - width_in_the_banner_from2HDMC)/recalculated_width_fromMadWidth`
 So Simply run as follow: 
 ```bash 
 cd MG5_aMC_vX_X_X
